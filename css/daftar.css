@@ -1,0 +1,85 @@
+ /* Lexend Deca Font */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #1f1b36;
+}
+
+/* Form Login User Start */
+
+.form-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.form-login .form-login-form {
+  width: 20%;
+  border-radius: 6px;
+}
+
+.card-title h1 {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+ input[type="email"] {
+  background: #1f1b36 !important;
+  padding: 6px;
+  color: white;
+  font-weight: normal;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+  color: white;
+  font-weight: normal;
+}
+
+input[type="text"]:active,
+input[type="password"]:active,
+input[type="number"]:active,
+input[type="email"]:active {
+  color: white;
+  font-weight: normal;
+}
+/* Form Login User End */
+
+/* Media Queries */
+
+/* Media Queries For Laptop */
+@media (max-width: 1400px) {
+  .form-login .form-login-form {
+    width: 40%;
+  }
+}
+
+/* Media Queries For Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .form-login .form-login-form {
+    width: 60%;
+  }
+}
+
+/* Media Queries For Mobile */
+@media (max-width: 768px) and (min-width: 300px) {
+  .form-login .form-login-form {
+    width: 90%;
+  }
+}
