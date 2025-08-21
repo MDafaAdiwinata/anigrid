@@ -1,0 +1,730 @@
+ /* Lexend Deca Font */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #131021;
+}
+
+/* navbar Style Start */
+
+.navbar {
+  background-color: #6b1e6b !important;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar .container .navbar-nav {
+  gap: 32px;
+}
+
+.nav-item .nav-link {
+  transition: all ease 0.5s;
+}
+
+.nav-item .nav-link:hover {
+  color: #cbbaff;
+}
+
+/* navbar Style End */
+
+/* Caraousel Section Start */
+
+.head-caraousel {
+  height: 600px;
+}
+
+.head-caraousel .carousel,
+.head-caraousel .carousel-inner,
+.head-caraousel .carousel-item,
+.head-caraousel img {
+  height: 600px;
+}
+
+.head-caraousel img {
+  object-fit: cover;
+}
+
+/* Caraousel Section End */
+
+/* Section Tentang Kami Start */
+
+.tentang-kami {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 5%;
+  justify-content: space-evenly;
+}
+
+.tentang-img-container,
+.tentang-kami-text {
+  text-align: start;
+}
+
+.tentang-img-container img {
+  margin-top: 20%;
+  max-width: 100%;
+  height: auto;
+}
+
+.tentang-kami-text {
+  margin-top: 30px;
+}
+
+.tentang-kami-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.tentang-kami-text p {
+  color: #ddd;
+  line-height: 1.7;
+  font-size: 2rem;
+  max-width: 600px;
+  margin: 20px auto 0;
+  text-align: justify;
+}
+
+/* Section Tentang Kami End */
+
+/* Section Anime Populer Start */
+
+.anime-terpopuler {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+.anime-terpopuler h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.anime-terpopuler h1 span {
+  color: #cbbaff;
+}
+
+.card-grid .card {
+  background-color: #212529; /* Sesuaikan dengan warna card Anda */
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-grid .card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top-populer {
+  height: 200px; /* Sesuaikan tinggi gambar */
+  object-fit: cover;
+}
+
+.container {
+  margin: auto;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background: #eee;
+  color: #000;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: start;
+}
+.poster {
+  height: 400px;
+  background: #e6bcbc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Section Anime Populer End */
+
+/* Section Daftar Anime Style Start */
+
+select,
+option,
+input[type="text"],
+input[type="password"] {
+  background: #131021 !important;
+  padding: 6px;
+  color: white;
+  font-weight: normal;
+}
+
+select,
+option,
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: white;
+  font-weight: normal;
+}
+
+select,
+option,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  color: white;
+  font-weight: normal;
+}
+
+select,
+option,
+input[type="text"]:active,
+input[type="password"]:active {
+  color: white;
+  font-weight: normal;
+}
+
+.daftar-anime {
+  padding: 5% 7%;
+}
+
+.daftar-anime .container h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Section Daftar Anime Style End */
+
+/* Footer Style Start */
+
+.section-footer {
+  background-color: #710002;
+  padding: 4% 0;
+}
+
+.section-footer .container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Footer Style End */
+
+/* Scroll Animation Start */
+
+.sca1 {
+  animation: sca1 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes sca1 {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.sca2 {
+  animation: sca2 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes sca2 {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.sca3 {
+  animation: sca3 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes sca3 {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scroll Animation End */
+
+/* Media Queries */
+
+/* Media Queries For Laptop */
+@media (max-width: 1400px) {
+}
+
+/* Media Queries For Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Navbar Style Start */
+
+  .navbar .container .navbar-nav {
+    gap: 8px;
+    margin-bottom: 2rem;
+  }
+
+  /* Navbar Style End */
+
+  /* Tentang Kami Style Start */
+
+  .tentang-img-container {
+    margin-right: 10%;
+  }
+
+  .tentang-kami-text p {
+    font-size: 1.6rem;
+  }
+
+  /* Tentang Kami Style End */
+}
+
+/* Media Queries For Mobile */
+@media (max-width: 768px) and (min-width: 300px) {
+  /* Navbar Style Start */
+  .navbar .container .navbar-nav {
+    gap: 8px;
+  }
+  /* Navbar Style End */
+
+  /* Carousel Style Start */
+  .head-caraousel {
+    height: 400px;
+  }
+
+  .head-caraousel .carousel,
+  .head-caraousel .carousel-inner,
+  .head-caraousel .carousel-item,
+  .head-caraousel img {
+    height: 400px;
+  }
+
+  /* Carousel Style End */
+
+  /* Tentang Kami Style Start */
+
+  .tentang-kami {
+    padding: 7% 10%;
+  }
+  .tentang-img-container {
+    display: none;
+  }
+
+  .tentang-kami-text {
+    margin-top: 0;
+  }
+
+  .tentang-kami-text h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .tentang-kami-text p {
+    text-align: justify;
+    font-size: 1.4rem;
+  }
+
+  /* Tentang Kami Style End */
+
+  /* Footer Style Start */
+
+  .section-footer {
+    background-color: #710002;
+    padding: 10% 0;
+  }
+
+  /* Footer Style End */
+}
+/* Lexend Deca Font */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #131021;
+}
+
+/* navbar Style Start */
+
+.navbar {
+  background-color: #6b1e6b !important;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar .container .navbar-nav {
+  gap: 32px;
+}
+
+.nav-item .nav-link {
+  transition: all ease 0.5s;
+}
+
+.nav-item .nav-link:hover {
+  color: #cbbaff;
+}
+
+/* navbar Style End */
+
+/* Caraousel Section Start */
+
+.head-caraousel {
+  height: 600px;
+}
+
+.head-caraousel .carousel,
+.head-caraousel .carousel-inner,
+.head-caraousel .carousel-item,
+.head-caraousel img {
+  height: 600px;
+}
+
+.head-caraousel img {
+  object-fit: cover;
+}
+
+/* Caraousel Section End */
+
+/* Section Tentang Kami Start */
+
+.tentang-kami {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 5%;
+  justify-content: space-evenly;
+}
+
+.tentang-img-container,
+.tentang-kami-text {
+  text-align: start;
+}
+
+.tentang-img-container img {
+  margin-top: 20%;
+  max-width: 100%;
+  height: auto;
+}
+
+.tentang-kami-text {
+  margin-top: 30px;
+}
+
+.tentang-kami-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.tentang-kami-text p {
+  color: #ddd;
+  line-height: 1.7;
+  font-size: 2rem;
+  max-width: 600px;
+  margin: 20px auto 0;
+  text-align: justify;
+}
+
+/* Section Tentang Kami End */
+
+/* Section Anime Populer Start */
+
+.anime-terpopuler {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+.anime-terpopuler h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.anime-terpopuler h1 span {
+  color: #cbbaff;
+}
+
+.card-grid .card {
+  background-color: #212529; /* Sesuaikan dengan warna card Anda */
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-grid .card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top-populer {
+  height: 200px; /* Sesuaikan tinggi gambar */
+  object-fit: cover;
+}
+
+.container {
+  margin: auto;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background: #eee;
+  color: #000;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: start;
+}
+.poster {
+  height: 400px;
+  background: #e6bcbc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Section Anime Populer End */
+
+/* Section Daftar Anime Style Start */
+
+select,
+option,
+input[type="text"],
+input[type="password"] {
+  background: #131021 !important;
+  padding: 6px;
+  color: white;
+  font-weight: normal;
+}
+
+select,
+option,
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: white;
+  font-weight: normal;
+}
+
+select,
+option,
+input[type="text"]:focus,
+input[type="password"]:focus {
+  color: white;
+  font-weight: normal;
+}
+
+select,
+option,
+input[type="text"]:active,
+input[type="password"]:active {
+  color: white;
+  font-weight: normal;
+}
+
+.daftar-anime {
+  padding: 5% 7%;
+}
+
+.daftar-anime .container h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Section Daftar Anime Style End */
+
+/* Footer Style Start */
+
+.section-footer {
+  background-color: #710002;
+  padding: 4% 0;
+}
+
+.section-footer .container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Footer Style End */
+
+/* Scroll Animation Start */
+
+.sca1 {
+  animation: sca1 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes sca1 {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.sca2 {
+  animation: sca2 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes sca2 {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.sca3 {
+  animation: sca3 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes sca3 {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scroll Animation End */
+
+/* Media Queries */
+
+/* Media Queries For Laptop */
+@media (max-width: 1400px) {
+}
+
+/* Media Queries For Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Navbar Style Start */
+
+  .navbar .container .navbar-nav {
+    gap: 8px;
+    margin-bottom: 2rem;
+  }
+
+  /* Navbar Style End */
+
+  /* Tentang Kami Style Start */
+
+  .tentang-img-container {
+    margin-right: 10%;
+  }
+
+  .tentang-kami-text p {
+    font-size: 1.6rem;
+  }
+
+  /* Tentang Kami Style End */
+}
+
+/* Media Queries For Mobile */
+@media (max-width: 768px) and (min-width: 300px) {
+  /* Navbar Style Start */
+  .navbar .container .navbar-nav {
+    gap: 8px;
+  }
+  /* Navbar Style End */
+
+  /* Carousel Style Start */
+  .head-caraousel {
+    height: 400px;
+  }
+
+  .head-caraousel .carousel,
+  .head-caraousel .carousel-inner,
+  .head-caraousel .carousel-item,
+  .head-caraousel img {
+    height: 400px;
+  }
+
+  /* Carousel Style End */
+
+  /* Tentang Kami Style Start */
+
+  .tentang-kami {
+    padding: 7% 10%;
+  }
+  .tentang-img-container {
+    display: none;
+  }
+
+  .tentang-kami-text {
+    margin-top: 0;
+  }
+
+  .tentang-kami-text h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .tentang-kami-text p {
+    text-align: justify;
+    font-size: 1.4rem;
+  }
+
+  /* Tentang Kami Style End */
+
+  /* Footer Style Start */
+
+  .section-footer {
+    background-color: #710002;
+    padding: 10% 0;
+  }
+
+  /* Footer Style End */
+}
